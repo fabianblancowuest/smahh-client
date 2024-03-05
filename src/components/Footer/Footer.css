@@ -1,0 +1,78 @@
+/* Estilos para el footer */
+.footer {
+	background: linear-gradient(
+		90deg,
+		hsla(213, 77%, 14%, 1) 0%,
+		hsla(202, 27%, 45%, 1) 100%
+	);
+}
+.container {
+	margin: 0 auto;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+/* Estilos para la navegación principal */
+.footer-nav {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1.2rem;
+	gap: 5rem;
+}
+
+.footer-nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* Estilos para los enlaces sociales */
+.social-links {
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+}
+
+.social-links a {
+	/* color: #ccc; */
+	color: white;
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+	margin: 0 2rem;
+	font-weight: bold;
+}
+
+/* Estilos para el párrafo de derechos de autor */
+.copyright {
+	text-align: center;
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+.footer-nav a:hover,
+.social-links a:hover {
+	color: hsla(202, 27%, 45%, 1);
+}
+
+/* Media query para teléfonos móviles */
+@media (max-width: 768px) {
+	.footer-nav {
+		/* flex-direction: column; */
+		text-align: center;
+		gap: 1.5rem;
+	}
+
+	.footer-nav a,
+	.social-links a {
+		font-size: 0.9rem;
+		margin: 0.5rem 0;
+	}
+
+	.social-links {
+		flex-direction: column;
+	}
+}

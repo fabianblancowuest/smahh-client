@@ -1,0 +1,8 @@
+.App {
+  background-color: rgb(73, 70, 70);
+  text-align: center;
+  
+  display: flex; /* Convertimos .App en un contenedor flexible */
+  flex-direction: column; /* Asegura que los elementos se alineen verticalmente */
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos el 100% de la altura del viewport */
+}

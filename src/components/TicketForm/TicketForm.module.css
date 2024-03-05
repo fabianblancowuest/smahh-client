@@ -1,0 +1,183 @@
+/* TicketForm.module.css */
+
+.formBackground {
+	background: linear-gradient(
+		90deg,
+		hsla(236, 100%, 8%, 1) 0%,
+		hsla(211, 100%, 28%, 1) 100%
+	);
+	color: #f5faf8;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	margin: 6rem auto 2rem;
+	max-width: 40vw;
+	max-height: 100vh;
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0px 2px 8px rgb(255, 255, 255);
+	animation: aparecer 3s ease-in-out;
+}
+
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 3rem;
+	padding-bottom: 0;
+}
+
+.title {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+}
+
+.formLabels {
+	font-size: 1.2rem;
+	color: #f5faf8;
+}
+
+.select {
+	width: 83%;
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	background-color: #f8f8f8;
+	color: #333;
+}
+
+.select option {
+	font-size: 1rem;
+	color: #555;
+}
+
+.input {
+	width: 80%;
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: 0.5rem;
+}
+
+.textareaSubject,
+.textarea {
+	width: 80%;
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: 0.5rem;
+	font-size: 1.1rem;
+	resize: none;
+}
+
+.textarea {
+	height: 15vh;
+}
+
+.errors {
+	color: #f00;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.button {
+	background: linear-gradient(
+		90deg,
+		hsla(236, 100%, 8%, 1) 0%,
+		hsla(211, 100%, 28%, 1) 100%
+	);
+	color: #fff;
+	font-size: 1rem;
+	padding: 12px 22px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+	margin-top: 1rem;
+	display: inline-block;
+	text-align: center;
+}
+
+.button:hover {
+	background: linear-gradient(
+		90deg,
+		rgb(9, 19, 160) 0%,
+		rgb(15, 108, 207) 100%
+	);
+	transform: scale(1.05);
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.successButtons {
+	display: flex;
+	gap: 3rem;
+}
+
+.messageOk {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.disabledButton {
+	background-color: #ccc;
+	color: #666;
+	cursor: not-allowed;
+	transition: none;
+}
+
+.successMesage {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.errorMessage {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.formBackground {
+		max-width: 90vw;
+		margin: 5rem auto;
+		padding: 1rem;
+	}
+
+	.formContainer {
+		padding: 1rem;
+	}
+
+	.title {
+		font-size: 1.2rem;
+	}
+
+	.label {
+		font-size: 1rem;
+	}
+
+	.input,
+	.select,
+	.textarea,
+	.textareaSubject {
+		width: 100%;
+	}
+
+	.button {
+		font-size: 0.9rem;
+	}
+}

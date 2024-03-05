@@ -1,0 +1,78 @@
+/* ProfileMenu.module.css */
+.dropdown {
+	position: absolute;
+	top: 64px;
+	right: 0px;
+	background: linear-gradient(
+		90deg,
+		hsla(202, 27%, 45%, 1) 0%,
+		hsla(213, 77%, 14%, 1) 100%
+	); /* Cambia al color de fondo deseado */
+	border: none;
+	width: 10rem;
+	border-radius: 0 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menuItem {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	cursor: pointer;
+	color: white;
+	font-size: 1rem;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+
+.icon:last-child {
+	display: inline;
+}
+
+.link {
+	color: white;
+}
+
+.menuItem:hover {
+	background-color: hsla(
+		202,
+		27%,
+		45%,
+		1
+	); /* Cambia al color de fondo deseado al hacer hover */
+}
+
+.icon {
+	margin-right: 10px;
+	font-size: 1.2rem;
+}
+
+/* Asegúrate de que el menú esté visible cuando sea necesario */
+.dropdown.active {
+	display: block;
+}
+
+@media (max-width: 767px) {
+	.dropdown {
+		position: static;
+		margin-top: auto;
+		background: linear-gradient(
+			90deg,
+			hsla(202, 27%, 45%, 1) 0%,
+			hsla(213, 77%, 14%, 1) 100%
+		); /* Cambia al color de fondo deseado */
+		border: none;
+		width: 100%;
+		border-radius: 0 4px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+	.menuItem {
+		align-items: self-start;
+		padding: 1rem;
+		cursor: pointer;
+		color: white;
+		font-size: 1rem;
+		text-decoration: none;
+		transition: background-color 0.3s;
+	}
+}

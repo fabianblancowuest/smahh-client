@@ -1,0 +1,71 @@
+/* .carrousel {
+	margin-top: 8rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 3rem;
+	text-align: center;
+}
+*/
+.carrousel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* gap: 3rem; */
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh; /* Altura de la pantalla completa */
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
+	line-height: 1.5;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrouselParagraph {
+	padding: 2rem 0;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slide {
+	opacity: 0;
+	transition: opacity 1s ease;
+	position: absolute;
+	text-align: center;
+}
+
+.active {
+	opacity: 1;
+	z-index: 1; /* Asegura que la imagen activa esté en la parte superior */
+}
+
+/* .carrouselImg {
+	width: 50vw;
+} */
+
+@media (max-width: 767px) {
+	.carrousel {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100vh; /* Altura de la pantalla completa */
+		font-size: 1rem;
+		letter-spacing: 0.1rem;
+		line-height: 1.5;
+		font-weight: bold;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.imgUrl {
+		width: 90vw;
+	}
+}

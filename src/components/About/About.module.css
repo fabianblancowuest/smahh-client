@@ -1,0 +1,162 @@
+.container {
+	margin: 0 auto;
+	color: white;
+	animation: aparecer 10s ease-in-out;
+}
+
+.container .sectionContainer {
+	background-image: url(./../../assets/images/Landing/banner-bg-5.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container .sectionContainer:nth-child(odd) {
+	background: linear-gradient(
+		90deg,
+		hsla(186, 33%, 94%, 1) 0%,
+		hsla(216, 41%, 79%, 1) 100%
+	);
+	color: black;
+}
+
+.title {
+	font-size: 2.5rem;
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box1,
+.box2 {
+	height: 100vh;
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+	line-height: 1.5;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding: 0 5rem;
+}
+
+.box2 {
+	flex-direction: row-reverse;
+}
+
+.description {
+	font-size: 1.2rem;
+}
+
+img {
+	width: 40rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0.5rem;
+}
+
+.contactImg {
+	padding: 5rem 0;
+	text-align: center;
+}
+
+.contactLink {
+	background: linear-gradient(
+		90deg,
+		hsla(236, 100%, 8%, 1) 0%,
+		hsla(211, 100%, 28%, 1) 100%
+	);
+	color: #fff;
+	font-size: 1rem;
+	padding: 12px 22px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+	margin-top: 1rem;
+	display: inline-block;
+}
+
+.contactLink:hover {
+	background: linear-gradient(
+		90deg,
+		rgb(9, 19, 160) 0%,
+		rgb(15, 108, 207) 100%
+	);
+	transform: scale(1.05);
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contactParagraph {
+	font-style: italic;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding-top: 3rem; /* Cambiar el padding para dispositivos móviles */
+	}
+
+	.title {
+		font-size: 2rem; /* Cambiar el tamaño de fuente para dispositivos móviles */
+		margin-bottom: 2rem; /* Cambiar el margen inferior para dispositivos móviles */
+	}
+
+	.box1,
+	.box2 {
+		height: auto; /* Cambiar la altura a automática para dispositivos móviles */
+		flex-direction: column; /* Cambiar la dirección de la flexbox para dispositivos móviles */
+		align-items: center; /* Centrar elementos para dispositivos móviles */
+		padding: 0 1rem; /* Cambiar el padding para dispositivos móviles */
+	}
+
+	.box2 {
+		flex-direction: column; /* Cambiar la dirección de la flexbox para dispositivos móviles */
+	}
+
+	.description {
+		font-size: 1rem; /* Cambiar el tamaño de fuente para dispositivos móviles */
+	}
+
+	img {
+		width: 100%; /* Hacer que la imagen ocupe el 100% del ancho del contenedor */
+		border-radius: 0.2rem; /* Cambiar el radio de borde para dispositivos móviles */
+	}
+
+	.container .sectionContainer:nth-child(even) {
+		background: white; /* Cambiar el fondo para dispositivos móviles */
+		color: black; /* Cambiar el color de texto para dispositivos móviles */
+	}
+
+	.contactImg {
+		padding: 3rem 0; /* Cambiar el padding para dispositivos móviles */
+	}
+
+	.contactLink {
+		font-size: 0.9rem; /* Cambiar el tamaño de fuente para dispositivos móviles */
+		padding: 0.8rem 1.6rem; /* Cambiar el padding para dispositivos móviles */
+	}
+
+	.contactParagraph {
+		font-size: 1rem; /* Cambiar el tamaño de fuente para dispositivos móviles */
+	}
+}

@@ -1,0 +1,125 @@
+.card {
+	border: none;
+	border-radius: 4px;
+	padding: 1rem 2rem;
+	margin: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	text-shadow: 0.1rem 0.1rem 0.7rem rgba(0, 0, 0, 0.8);
+	/* Agrega posición relativa al contenedor */
+	position: relative;
+}
+
+.cardContent {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.column {
+	padding: 0 1rem;
+	width: 20vw;
+}
+
+.notStarted {
+	background-color: #1e6091;
+}
+
+.inProgress {
+	background-color: #52b69a;
+}
+
+.completed {
+	background-color: #99d98c;
+}
+.closed {
+	background-color: #d9ed92;
+}
+
+.detailButton {
+	/* font-size: 1rem;
+	font-weight: bold;
+	padding: 0.7rem 1.4rem;
+	background-color: #888;
+	color: #fff;
+	border: none;
+	border-radius: 0.3rem;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; */
+	font-weight: bold;
+	margin-left: auto;
+	background: linear-gradient(
+		90deg,
+		hsla(236, 100%, 8%, 1) 0%,
+		hsla(211, 100%, 28%, 1) 100%
+	);
+	color: #fff;
+	font-size: 1rem;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 0.2rem;
+	cursor: pointer;
+	transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+	display: inline-block;
+}
+
+.detailButton:hover {
+	background: linear-gradient(
+		90deg,
+		rgb(9, 19, 160) 0%,
+		rgb(15, 108, 207) 100%
+	);
+	transform: scale(1.05);
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.type {
+	margin: 0.5rem 0;
+	font-weight: bold; /* Añadir negrita para la clave "Type" */
+}
+
+.priority,
+.status,
+.title,
+.description,
+.userName,
+.createdAt {
+	margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+	.cardContent {
+		flex-direction: column;
+		/* align-items: center; */
+	}
+
+	.column {
+		/* width: 100%; */
+		/* padding: 0.5rem; */
+		/* width: 100%; */
+		padding: 0.5rem;
+		width: 100%;
+		font-size: 0.9rem;
+	}
+
+	.detailButton {
+		/* display: none; */
+		width: 100%;
+		font-size: 0.8rem;
+		padding: 0.8rem 1.6rem;
+	}
+
+	.type,
+	.priority,
+	.status,
+	.title,
+	.description,
+	.userName,
+	.createdAt {
+		margin: 0.3rem 0;
+	}
+}
