@@ -161,7 +161,7 @@ export const updateTicket =
 // USER- STAFF
 
 export const getTicketDetail = (id) => {
-	const URL = `http://${ipDirection}:3001/user/ticket-detail/`;
+	// const URL = `http://${ipDirection}:3001/user/ticket-detail/`;
 	const URL = `${baseURL}/user/ticket-detail/`;
 
 	return async (dispatch) => {
