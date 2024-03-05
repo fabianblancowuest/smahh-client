@@ -1,8 +1,7 @@
 import React from "react";
-import styles from "./Searchbar.module.css";
+import styles from "./SearchBar.module.css";
 
 const SearchBar = ({ onSearchChange }) => {
-
 	const handleInputChange = (event) => {
 		const newSearch = event.target.value;
 		onSearchChange(newSearch);
@@ -23,11 +22,10 @@ const SearchBar = ({ onSearchChange }) => {
 				placeholder="Enter your search..."
 				onKeyUp={handleKeyUp}
 			/>
-			
+
 			<button className={styles.searchButton} onClick={onSearchChange}>
 				Search
 			</button>
-
 		</div>
 	);
 };
