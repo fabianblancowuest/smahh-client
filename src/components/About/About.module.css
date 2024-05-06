@@ -50,7 +50,7 @@
 }
 
 .description {
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 img {
@@ -125,6 +125,8 @@ img {
 		flex-direction: column; /* Cambiar la dirección de la flexbox para dispositivos móviles */
 		align-items: center; /* Centrar elementos para dispositivos móviles */
 		padding: 0 1rem; /* Cambiar el padding para dispositivos móviles */
+		gap: 1rem;
+		line-height: 1.5;
 	}
 
 	.box2 {

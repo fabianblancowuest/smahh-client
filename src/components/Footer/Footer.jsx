@@ -64,15 +64,15 @@ export default function Footer() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							{item.icon}
+							<i>{item.icon}</i>
 							<span className="sr-only">{item.name}</span>
 						</a>
 					))}
 				</div>
 				<p className="copyright">
 					&copy; 2023 Smahh. Smahh Cybersecurity Services 11A Tully Street,
-					Kilbirnie 6022. All rights reserved. Created by Fabian Blanco Wuest &
-					Luciano Ascuet (2023).
+					Kilbirnie 6022. All rights reserved. Website developed by Fabian
+					Blanco Wuest & Luciano Ascuet (2023).
 				</p>
 			</div>
 		</footer>

@@ -46,11 +46,14 @@
 	font-weight: bold;
 }
 
+.social-links i {
+	margin-right: 0.3rem;
+}
+
 /* Estilos para el párrafo de derechos de autor */
 .copyright {
 	text-align: center;
 	font-size: 0.9rem;
-	font-style: italic;
 }
 
 .footer-nav a:hover,
