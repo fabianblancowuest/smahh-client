@@ -5,10 +5,10 @@
 }
 
 .container .sectionContainer {
-	background-image: url(./../../assets/images/Landing/banner-bg-5.jpg);
-	background-size: cover;
+	background: linear-gradient(to right, #04151a, #0e1a20);
+	/* background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -16,7 +16,7 @@
 	justify-content: center;
 }
 
-.container .sectionContainer:nth-child(odd) {
+.container .sectionContainer:nth-child(even) {
 	background: linear-gradient(
 		90deg,
 		hsla(186, 33%, 94%, 1) 0%,
@@ -33,11 +33,13 @@
 
 .box1,
 .box2 {
-	height: 100vh;
 	display: flex;
-	gap: 3rem;
+	max-width: 1600px;
+	height: 100vh;
+	gap: 4rem;
 	align-items: center;
-	line-height: 1.5;
+	text-align: center;
+	line-height: 2;
 	font-weight: bold;
 	letter-spacing: 0.1rem;
 	padding: 0 5rem;
@@ -112,10 +114,6 @@ img {
 }
 
 @media (max-width: 767px) {
-	.container {
-		padding-top: 3rem; /* Cambiar el padding para dispositivos móviles */
-	}
-
 	.title {
 		font-size: 2rem; /* Cambiar el tamaño de fuente para dispositivos móviles */
 		margin-bottom: 2rem; /* Cambiar el margen inferior para dispositivos móviles */
@@ -135,6 +133,7 @@ img {
 
 	.description {
 		font-size: 1rem; /* Cambiar el tamaño de fuente para dispositivos móviles */
+		text-align: center;
 	}
 
 	img {
@@ -142,9 +141,9 @@ img {
 		border-radius: 0.2rem; /* Cambiar el radio de borde para dispositivos móviles */
 	}
 
-	.container .sectionContainer:nth-child(even) {
-		background: white; /* Cambiar el fondo para dispositivos móviles */
-		color: black; /* Cambiar el color de texto para dispositivos móviles */
+	.container .sectionContainer:nth-child(odd) {
+		background: #120c35; /* Cambiar el fondo para dispositivos móviles */
+		color: white; /* Cambiar el color de texto para dispositivos móviles */
 	}
 
 	.contactImg {

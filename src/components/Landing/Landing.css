@@ -187,8 +187,8 @@ a {
 .home-sectionService p {
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
-	line-height: 1.5;
+	max-width: 1200px;
+	line-height: 1.8;
 	font-weight: bold;
 	font-size: 1.2em;
 	letter-spacing: 0.15rem;
@@ -227,11 +227,13 @@ a {
 
 @media (max-width: 768px) {
 	.home-title {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 
 	.home-description {
-		font-size: 1rem;
+		font-size: 1.1rem;
+		width: 70vw;
+		line-height: 1.8;
 	}
 
 	.home-cards {
@@ -264,5 +266,7 @@ a {
 
 	.home-sectionService p {
 		font-size: 0.95rem;
+		line-height: 1.7;
+		width: 90%;
 	}
 }

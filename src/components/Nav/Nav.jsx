@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Nav.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { FaAtom, FaVirus, FaUser, FaBars } from "react-icons/fa"; // Importa el ícono de usuario
+import { FaUser, FaBars } from "react-icons/fa"; // Importa el ícono de usuario
+import { VscChromeClose } from "react-icons/vsc";
+import { GrClose } from "react-icons/gr";
 import ProfileMenu from "../ProfileMenu/ProfileMenu";
 import { useLocation } from "react-router-dom";
 import logo from "./../../assets/images/Landing/banner-logo.png";
@@ -21,7 +23,6 @@ const Nav = () => {
 	}));
 
 	const { userType } = user;
-	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
 	// Función para que siempre se muestren las vistas desde la parte superior de cada página
@@ -47,11 +48,6 @@ const Nav = () => {
 
 	const handleToggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
-		// if (isProfileOpen) {
-		// 	setIsProfileOpen(false);
-		// }
-
-		// setIsProfileOpen(true);
 	};
 
 	const toggleProfile = () => {
@@ -60,7 +56,21 @@ const Nav = () => {
 
 	return (
 		<div className={styles.container}>
-			<FaBars className={styles.menuToggle} onClick={handleToggleMenu} />
+			<div>
+				{!isMenuOpen ? (
+					<FaBars
+						className={`${styles.menuToggle} ${styles.slowChange}`}
+						onClick={handleToggleMenu}
+					></FaBars>
+				) : (
+					<VscChromeClose
+						className={`${styles.menuToggle} ${styles.white}`}
+						onClick={handleToggleMenu}
+						strokeWidth={0.5}
+					></VscChromeClose>
+				)}
+			</div>
+
 			<nav
 				className={`${styles.navContainer} ${isMenuOpen ? styles.open : ""}`}
 			>

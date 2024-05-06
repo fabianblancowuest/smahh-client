@@ -37,7 +37,7 @@ const SignUp = () => {
 
 	const message = (
 		<div className={styles.messageOk}>
-			<span>You've signed up succesfuly ✔️</span>
+			<span>You have signed up succesfully.✔️</span>
 			<span>A confirmation email will be sent to you.</span>
 		</div>
 	);
@@ -71,7 +71,7 @@ const SignUp = () => {
 
 		if (Object.keys(formErrors).length === 0) {
 			try {
-				await dispatch(signUp(userData));
+				dispatch(signUp(userData));
 				setSuccessMessage(message);
 				Swal.fire({
 					position: "top-end",
