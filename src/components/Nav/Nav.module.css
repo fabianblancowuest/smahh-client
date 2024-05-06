@@ -131,6 +131,7 @@ ul {
 		margin: 0;
 		padding: 0;
 	}
+
 	.menuToggle {
 		display: inline;
 		width: 30px;
@@ -138,7 +139,7 @@ ul {
 		position: absolute;
 		top: 0;
 		right: 0;
-		margin: 0.3rem;
+		margin: 0.6rem 1rem 0.6rem 0;
 		cursor: pointer;
 		z-index: 101;
 		color: white;
@@ -183,7 +184,7 @@ ul {
 		gap: 0;
 		padding: 0;
 		text-align: center;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 
 	.logoContainer img,
@@ -212,7 +213,7 @@ ul {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		gap: 4rem;
+		/* gap: 1rem; */
 	}
 
 	.bars:hover {
@@ -220,11 +221,15 @@ ul {
 	}
 
 	li {
-		display: block;
+		display: flex;
+		justify-content: center;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		width: 100vw;
+		height: 5rem !important;
+		align-items: center;
+		transition: 0.2s ease;
 	}
 
 	li:hover {
