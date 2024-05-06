@@ -133,8 +133,8 @@ ul {
 	}
 	.menuToggle {
 		display: inline;
-		width: 35px;
-		height: 35px;
+		width: 30px;
+		height: 30px;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -144,6 +144,9 @@ ul {
 		color: white;
 		/* transition: all 0.3s ease-in-out; */
 		transition: transform 0.5s ease-in-out;
+		padding: 0.4rem;
+		border-radius: 15%;
+		border: 3px solid white;
 	}
 
 	.menuToggle:hover {
