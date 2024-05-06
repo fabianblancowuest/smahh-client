@@ -71,10 +71,8 @@ export default function Footer() {
 				</div>
 				<p className="copyright">
 					&copy; 2023 Smahh. Smahh Cybersecurity Services 11A Tully Street,
-					Kilbirnie 6022. All rights reserved.
-				</p>
-				<p className="copyright">
-					Created by Fabian Blanco Wuest & Luciano Ascuet (2023) &#169;
+					Kilbirnie 6022. All rights reserved. Created by Fabian Blanco Wuest &
+					Luciano Ascuet (2023)
 				</p>
 			</div>
 		</footer>
