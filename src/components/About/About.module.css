@@ -114,9 +114,8 @@ img {
 }
 
 @media (max-width: 767px) {
-	.title {
-		font-size: 2rem; /* Cambiar el tamaño de fuente para dispositivos móviles */
-		margin-bottom: 2rem; /* Cambiar el margen inferior para dispositivos móviles */
+	.sectionContainer:nth-child(1) {
+		padding-top: 5rem;
 	}
 
 	.box1,
@@ -139,7 +138,7 @@ img {
 	}
 
 	img {
-		width: 100%; /* Hacer que la imagen ocupe el 100% del ancho del contenedor */
+		width: 80%;
 		border-radius: 0.2rem; /* Cambiar el radio de borde para dispositivos móviles */
 	}
 
@@ -153,8 +152,8 @@ img {
 	}
 
 	.contactLink {
-		font-size: 0.9rem; /* Cambiar el tamaño de fuente para dispositivos móviles */
-		padding: 0.8rem 1.6rem; /* Cambiar el padding para dispositivos móviles */
+		font-size: 1.1rem; /* Cambiar el tamaño de fuente para dispositivos móviles */
+		padding: 1rem 2rem; /* Cambiar el padding para dispositivos móviles */
 	}
 
 	.contactParagraph {
