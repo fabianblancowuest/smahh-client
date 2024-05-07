@@ -10,7 +10,7 @@
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	margin: 4rem auto 0;
 	margin: 6rem auto;
-	max-width: 40vw;
+	max-width: 600px;
 	/* max-height: 100vh; */
 	padding: 2rem;
 	border-radius: 0.5rem;
@@ -40,7 +40,7 @@
 }
 
 .input {
-	width: 80%;
+	width: 90%;
 	padding: 10px;
 	border: 1px solid #ddd;
 	border-radius: 4px;
@@ -107,7 +107,7 @@
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
 	.container {
 		max-width: 90vw;
 		margin: 5rem auto;
