@@ -1,0 +1,19 @@
+/* .carousel {
+	width: 100vw;
+}
+
+.custom-prev,
+.custom-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
+.custom-prev {
+	left: 0;
+}
+
+.custom-next {
+	right: 0;
+} */
