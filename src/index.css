@@ -3,3 +3,7 @@ ol,
 ul {
 	margin: unset;
 }
+
+body {
+	background-color: unset;
+}
