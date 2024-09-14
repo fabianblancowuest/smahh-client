@@ -1,0 +1,52 @@
+.carousel-container {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
+.carousel {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+.home-card {
+	flex: 0 0 33.33%; /* Tres tarjetas visibles al mismo tiempo */
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.home-img {
+	width: 100%;
+	height: auto;
+}
+
+.home-cardTitle {
+	font-size: 1.5em;
+	margin: 10px 0;
+}
+
+.home-cardText {
+	font-size: 1em;
+}
+
+.carousel-controls {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+.carousel-controls button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.carousel-controls button:disabled {
+	background-color: #cccccc;
+	cursor: not-allowed;
+}
