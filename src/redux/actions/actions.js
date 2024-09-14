@@ -20,7 +20,8 @@ const baseURL = "https://smahh-server.onrender.com";
 // COMMON
 
 export const signUp = (userData) => async (dispatch) => {
-	const URL = `${baseURL}/user/register`;
+	const URL = `http://${ipDirection}:3001/user/register`;
+	// const URL = `${baseURL}/user/register`;
 
 	try {
 		const { data } = await axios.post(URL, userData);
@@ -36,8 +37,8 @@ export const signUp = (userData) => async (dispatch) => {
 };
 
 export const logIn = (userData) => async (dispatch) => {
-	// const URL = `http://${ipDirection}:3001/login`;
-	const URL = `${baseURL}/login`;
+	const URL = `http://${ipDirection}:3001/login`;
+	// const URL = `${baseURL}/login`;
 
 	try {
 		const { data } = await axios.post(URL, userData);
@@ -56,8 +57,8 @@ export const logIn = (userData) => async (dispatch) => {
 
 export const riseTicket =
 	(newTicket, userId, userName, userLastName) => async (dispatch) => {
-		// const URL = `http://${ipDirection}:3001/user/ticket`;
-		const URL = `${baseURL}/user/ticket`;
+		const URL = `http://${ipDirection}:3001/user/ticket`;
+		// const URL = `${baseURL}/user/ticket`;
 
 		newTicket.userId = userId;
 		newTicket.userName = userName;
@@ -77,8 +78,8 @@ export const riseTicket =
 	};
 
 export const updateUser = (userId, formData) => async (dispatch) => {
-	// const URL = `http://${ipDirection}:3001/user/updateUser/${userId}`;
-	const URL = `${baseURL}/user/updateUser/${userId}`;
+	const URL = `http://${ipDirection}:3001/user/updateUser/${userId}`;
+	// const URL = `${baseURL}/user/updateUser/${userId}`;
 
 	try {
 		const { data } = await axios.put(URL, formData);
@@ -96,8 +97,8 @@ export const updateUser = (userId, formData) => async (dispatch) => {
 
 export const getUserTickets =
 	(userId, priority, status, order) => async (dispatch) => {
-		// const URL = `http://${ipDirection}:3001/user/tickets/${userId}?priority=${priority}&status=${status}&order=${order}`;
-		const URL = `${baseURL}/user/tickets/${userId}?priority=${priority}&status=${status}&order=${order}`;
+		const URL = `http://${ipDirection}:3001/user/tickets/${userId}?priority=${priority}&status=${status}&order=${order}`;
+		// const URL = `${baseURL}/user/tickets/${userId}?priority=${priority}&status=${status}&order=${order}`;
 
 		try {
 			const { data } = await axios.get(URL); //
@@ -121,8 +122,8 @@ export const getAllAndSearchTickets = (
 	status,
 	order,
 ) => {
-	// const URL = `http://${ipDirection}:3001/staff/tickets?search=${search}&page=${page}&perPage=${perPage}&priority=${priority}&status=${status}&order=${order}`;
-	const URL = `${baseURL}/staff/tickets?search=${search}&page=${page}&perPage=${perPage}&priority=${priority}&status=${status}&order=${order}`;
+	const URL = `http://${ipDirection}:3001/staff/tickets?search=${search}&page=${page}&perPage=${perPage}&priority=${priority}&status=${status}&order=${order}`;
+	// const URL = `${baseURL}/staff/tickets?search=${search}&page=${page}&perPage=${perPage}&priority=${priority}&status=${status}&order=${order}`;
 
 	return async (dispatch) => {
 		try {
@@ -140,8 +141,8 @@ export const getAllAndSearchTickets = (
 
 export const updateTicket =
 	(ticketId, newStatus) => async (dispatch, getState) => {
-		// const URL = `http://${ipDirection}:3001/staff/update-ticket`;
-		const URL = `${baseURL}/staff/update-ticket`;
+		const URL = `http://${ipDirection}:3001/staff/update-ticket`;
+		// const URL = `${baseURL}/staff/update-ticket`;
 
 		try {
 			const { data } = await axios.put(URL, { ticketId, newStatus });
@@ -161,8 +162,8 @@ export const updateTicket =
 // USER- STAFF
 
 export const getTicketDetail = (id) => {
-	// const URL = `http://${ipDirection}:3001/user/ticket-detail/`;
-	const URL = `${baseURL}/user/ticket-detail/`;
+	const URL = `http://${ipDirection}:3001/user/ticket-detail/`;
+	// const URL = `${baseURL}/user/ticket-detail/`;
 
 	return async (dispatch) => {
 		try {
